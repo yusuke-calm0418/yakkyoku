@@ -29,3 +29,8 @@ Thumbs.db
 
 # Docker
 /yakkyoku-db-data/
+
+src/node_modules
+src/public/build
+src/vendor
+src/storage
