@@ -39,6 +39,13 @@ services:
     tty: true
     networks:
       - yakkyoku-network
+    command: >
+      sh -c "
+        echo '🚀 Starting Vite Dev Server...' &&
+        rm -rf node_modules/.vite &&
+        npm install &&
+        npm run dev -- --host 0.0.0.0 --port 5173
+      "
 
   # MySQL
   db:
