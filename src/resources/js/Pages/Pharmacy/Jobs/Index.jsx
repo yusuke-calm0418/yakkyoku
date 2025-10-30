@@ -1,5 +1,5 @@
 import React from 'react';
-import { Inertia } from '@inertiajs/inertia';
+import { router } from '@inertiajs/react';
 
 export default function PharmacyJobsIndex({ jobs }) {
   return (
@@ -20,7 +20,7 @@ export default function PharmacyJobsIndex({ jobs }) {
                 className="text-red-600 underline"
                 onClick={() => {
                   if (confirm('本当に削除しますか？')) {
-                    Inertia.delete(`/dashboard/jobs/${job.id}`);
+                    router.delete(`/dashboard/jobs/${job.id}`);
                   }
                 }}
               >削除</button>

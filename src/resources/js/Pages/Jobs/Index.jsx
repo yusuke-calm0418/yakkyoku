@@ -1,5 +1,5 @@
 import React from 'react';
-import { Inertia } from '@inertiajs/inertia';
+import { router } from '@inertiajs/react';
 
 export default function JobsIndex({ jobs, filters }) {
   const [pref, setPref] = React.useState(filters.pref || '');
@@ -7,7 +7,7 @@ export default function JobsIndex({ jobs, filters }) {
 
   const handleFilter = (e) => {
     e.preventDefault();
-    Inertia.get('/jobs', { pref, date_from: dateFrom });
+    router.get('/jobs', { pref, date_from: dateFrom });
   };
 
   return (
