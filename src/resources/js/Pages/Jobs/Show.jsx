@@ -1,5 +1,5 @@
 import React from 'react';
-import { Inertia } from '@inertiajs/inertia';
+import { router } from '@inertiajs/react';
 
 export default function JobsShow({ job, auth }) {
   const [message, setMessage] = React.useState('');
@@ -9,7 +9,7 @@ export default function JobsShow({ job, auth }) {
   const handleApply = (e) => {
     e.preventDefault();
     setError('');
-    Inertia.post(`/jobs/${job.id}/apply`, { message }, {
+    router.post(`/jobs/${job.id}/apply`, { message }, {
       onError: (errors) => {
         setError(errors.message || '応募に失敗しました');
       },
