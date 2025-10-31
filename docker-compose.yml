@@ -38,7 +38,7 @@ services:
       - ./src:/var/www/html
     tty: true
     command: >
-      sh -c "npm run dev -- --host 0.0.0.0 --port 5173"
+      sh -lc "npm run dev -- --host 0.0.0.0 --port 5173"
     networks:
       - yakkyoku-network
 
