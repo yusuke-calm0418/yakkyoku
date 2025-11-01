@@ -5,7 +5,6 @@ import { createInertiaApp } from '@inertiajs/react'
 
 createInertiaApp({
   resolve: (name) => {
-    // ./Pages 以下の .jsx / .tsx を全部対象にする
     const pages = import.meta.glob('./Pages/**/*.{jsx,tsx}')
     const key = `./Pages/${name}.jsx`
     const keyTsx = `./Pages/${name}.tsx`
