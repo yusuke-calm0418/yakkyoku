@@ -44,6 +44,7 @@ export default function Register() {
                 type="text"
                 name="name"
                 value={data.name}
+                required
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-200"
                 autoComplete="name"
                 isFocused={true}
@@ -59,6 +60,7 @@ export default function Register() {
                 type="email"
                 name="email"
                 value={data.email}
+                required
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-200"
                 autoComplete="username"
                 onChange={(e) => setData('email', e.target.value)}
@@ -73,6 +75,7 @@ export default function Register() {
                 type="password"
                 name="password"
                 value={data.password}
+                required
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-200"
                 autoComplete="new-password"
                 onChange={(e) => setData('password', e.target.value)}
@@ -87,6 +90,7 @@ export default function Register() {
                 type="password"
                 name="password_confirmation"
                 value={data.password_confirmation}
+                required
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-200"
                 autoComplete="new-password"
                 onChange={(e) => setData('password_confirmation', e.target.value)}
