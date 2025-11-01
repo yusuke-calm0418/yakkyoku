@@ -69,9 +69,9 @@ export default function Dashboard({ auth }) {
         {/* 下部の案内 */}
         <div className="mt-16 text-gray-500 text-sm">
           ご不明点がある場合は{' '}
-          <Link href="#" className="text-green-600 underline hover:text-green-700">
+          {/* <Link href="#" className="text-green-600 underline hover:text-green-700">
             サポートセンター
-          </Link>{' '}
+          </Link>{' '} */}
           までお問い合わせください。
         </div>
       </div>
