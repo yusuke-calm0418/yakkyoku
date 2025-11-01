@@ -67,12 +67,12 @@ export default function ForgotPassword({ status }) {
         </div>
 
         <div className="text-center mt-6 text-sm text-gray-600">
-          <a
+          <Link
             href={route('login')}
             className="text-green-600 font-medium hover:underline"
           >
             ログイン画面へ戻る
-          </a>
+          </Link>
         </div>
       </div>
     </GuestLayout>
